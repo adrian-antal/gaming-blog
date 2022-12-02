@@ -18,6 +18,10 @@ public class Post {
     @Column(columnDefinition = "TEXT")
     private String image;
 
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+
     public Long getId() {
         return id;
     }
