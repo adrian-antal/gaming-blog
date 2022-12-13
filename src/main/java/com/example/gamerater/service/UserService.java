@@ -20,7 +20,6 @@ import java.util.stream.Collectors;
 @Service
 public class UserService implements UserDetailsService{
 
-    private static final String DEFAULT_ROLE = "ROLE_USER";
     private UserRepository userRepository;
     private PasswordEncoder passwordEncoder;
     private RoleRepository roleRepository;
